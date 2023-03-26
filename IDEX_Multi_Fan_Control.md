@@ -17,13 +17,13 @@ CARRIAGE_PRINT_FAN
 ```
 # X1 print cooling fan
 [fan_generic fan]
-pin: PC9
+pin: PB7
 cycle_time: 0.0100
 kick_start_time: 1.00
 
 # X2 print cooling fan
 [fan_generic fan1]
-pin: PA8
+pin: PB6
 cycle_time: 0.0100
 kick_start_time: 1.000
 ```
