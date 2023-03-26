@@ -14,7 +14,8 @@ CARRIAGE_PRINT_FAN
 
 # This is to define the fans
 
-`# X1 print cooling fan
+```
+# X1 print cooling fan
 [fan_generic fan]
 pin: PC9
 cycle_time: 0.0100
@@ -24,22 +25,25 @@ kick_start_time: 1.00
 [fan_generic fan1]
 pin: PA8
 cycle_time: 0.0100
-kick_start_time: 1.000`
+kick_start_time: 1.000
+```
 
 # Alternative option to use more than 1 fan pin for one controll
 
-`# X2 print cooling fan
+```
+# X2 print cooling fan
 [multi_pin T1_fans]
 pins: PB6, PB5
 
 [fan_generic fan1]
 pin: multi_pin:T1_fans
 # cycle_time: 0.0100
-# kick_start_time: 1.000`
+# kick_start_time: 1.000
+```
 
 # This is the Macro to use the M106 and M107 input
 
-`
+```
 [gcode_macro FAN_VARIABLE]
 gcode:
 
@@ -108,4 +112,5 @@ gcode:
         ### FAN on carriage X2
         SET_FAN_SPEED FAN={fan_vars.fan} SPEED=0
         SET_FAN_SPEED FAN={fan_vars.fan1} SPEED={fan_speed}
-    {% endif %}`
+    {% endif %}
+    ```
