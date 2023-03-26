@@ -2,13 +2,15 @@
 
 # This goes in the T0 and T1 macros
 
-`## add to T0 macro
+```
+## add to T0 macro
 SET_GCODE_VARIABLE MACRO=FAN_VARIABLE VARIABLE=active_fan VALUE=0
 CARRIAGE_PRINT_FAN 
 
 ## add to T1 macro
 SET_GCODE_VARIABLE MACRO=FAN_VARIABLE VARIABLE=active_fan VALUE=1
-CARRIAGE_PRINT_FAN`
+CARRIAGE_PRINT_FAN
+```
 
 # This is to define the fans
 
