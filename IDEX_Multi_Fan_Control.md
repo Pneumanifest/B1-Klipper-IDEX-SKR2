@@ -31,7 +31,7 @@ kick_start_time: 1.000
 # Alternative option to use more than 1 fan pin for one controll
 
 ```
-# X2 print cooling fan
+# X2 print cooling with 2 separate controllable fans
 [multi_pin T1_fans]
 pins: PB6, PB5
 
